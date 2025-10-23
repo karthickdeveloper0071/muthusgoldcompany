@@ -6,6 +6,7 @@ import Gallery from '../components/Gallery'
 import WhyChooseUs from '../components/WhyChooseUs'
 import Services from '../components/Services'
 import Process from '../components/Process'
+import ContactForm from '../components/ContactForm'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
 
@@ -23,6 +24,7 @@ const HomePage = () => {
       <WhyChooseUs />
       <Services />
       <Process />
+      <ContactForm />
       <Testimonials />
       <Contact />
     </>

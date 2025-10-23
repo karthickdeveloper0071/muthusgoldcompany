@@ -12,7 +12,6 @@ const GoldCollection = () => {
     { url: 'https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=800&q=80', title: 'Silver Collection', desc: 'Premium silver ornaments' },
     { url: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80', title: 'Diamond & Gold', desc: 'Luxury diamond jewelry sets' },
   ]
-
   return (
     <section ref={ref} className="py-16 md:py-24 bg-gradient-to-b from-white via-ivory to-white relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
@@ -35,7 +34,6 @@ const GoldCollection = () => {
             Discover our stunning range of premium gold jewelry
           </p>
         </motion.div>
-
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {collections.map((item, index) => (
             <motion.div
@@ -66,7 +64,6 @@ const GoldCollection = () => {
             </motion.div>
           ))}
         </div>
-
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
