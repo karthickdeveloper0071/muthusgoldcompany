@@ -7,10 +7,10 @@ const GoldCollection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const collections = [
-    { url: 'https://images.unsplash.com/photo-1611955167811-4711904bb9f8?w=800&q=80', title: 'Bridal Collection', desc: 'Exquisite designs for your special day' },
-    { url: 'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&q=80', title: 'Traditional Gold', desc: 'Classic heritage jewelry pieces' },
-    { url: 'https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=800&q=80', title: 'Silver Collection', desc: 'Premium silver ornaments' },
-    { url: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80', title: 'Diamond & Gold', desc: 'Luxury diamond jewelry sets' },
+    { url: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80', title: 'Instant Loan Settlement', desc: 'Clear your gold loans within 24 hours' },
+    { url: 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=800&q=80', title: 'Best Market Rates', desc: 'Get maximum value for your gold' },
+    { url: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80', title: 'Zero Hidden Charges', desc: 'Complete transparency in all dealings' },
+    { url: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80', title: 'Quick Documentation', desc: 'Simple paperwork, fast processing' },
   ]
   return (
     <section ref={ref} className="py-16 md:py-24 bg-gradient-to-b from-white via-ivory to-white relative overflow-hidden">
@@ -28,10 +28,10 @@ const GoldCollection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-5xl font-playfair font-bold text-maroon mb-4">
-            Our Gold Collection
+            Why Choose Our Gold Loan Services?
           </h2>
           <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-            Discover our stunning range of premium gold jewelry
+            Fast, transparent, and hassle-free gold loan settlement solutions
           </p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -70,15 +70,15 @@ const GoldCollection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center"
         >
-          <Link to="/collection">
+          <a href="tel:+916377836377">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-maroon-gradient text-ivory px-10 py-4 rounded-full font-semibold text-lg shadow-2xl hover:shadow-gold transition-all"
             >
-              View Full Collection
+              Get Instant Quote
             </motion.button>
-          </Link>
+          </a>
         </motion.div>
       </div>
     </section>

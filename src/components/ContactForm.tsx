@@ -15,7 +15,7 @@ const ContactForm = () => {
     
     const message = `*New Inquiry from Muthus Gold Website*%0A%0A*Name:* ${formData.name}%0A*Mobile:* ${formData.mobile}%0A*Email:* ${formData.email}%0A*Address:* ${formData.address}`
     
-    const whatsappUrl = `https://wa.me/918825537674?text=${message}`
+    const whatsappUrl = `https://wa.me/916377836377?text=${message}`
     window.open(whatsappUrl, '_blank')
     
     setFormData({ name: '', mobile: '', email: '', address: '' })

@@ -61,7 +61,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <a href="#contact">
+          <a href="tel:+916377836377">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -71,7 +71,7 @@ const Hero = () => {
               Get Instant Quote
             </motion.button>
           </a>
-          <a href="tel:+919876543210">
+          <a href="tel:+916377836377">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

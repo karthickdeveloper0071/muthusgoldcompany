@@ -11,7 +11,6 @@ const Footer = () => {
               Your trusted partner for gold loan settlement and jewelry buying services. We provide transparent, fair, and instant solutions.
             </p>
           </div>
-
           <div>
             <h4 className="font-semibold text-gold mb-4">Quick Links</h4>
             <div className="space-y-2">
@@ -21,20 +20,19 @@ const Footer = () => {
               <a href="#contact" className="block text-ivory/70 hover:text-gold transition-colors">Contact</a>
             </div>
           </div>
-
           <div>
             <h4 className="font-semibold text-gold mb-4">Connect With Us</h4>
             <div className="flex gap-4 mb-4">
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
                 <FaInstagram className="text-xl" />
               </a>
-              <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
+              <a href="https://wa.me/916377836377" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
                 <FaWhatsapp className="text-xl" />
               </a>
-              <a href="mailto:info@muthusgold.com" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
+              <a href="mailto:muthusgoldcompany@gmail.com" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
                 <FaEnvelope className="text-xl" />
               </a>
-              <a href="tel:+919876543210" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
+              <a href="tel:+916377836377" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
                 <FaPhone className="text-xl" />
               </a>
             </div>

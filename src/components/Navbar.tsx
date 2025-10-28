@@ -60,7 +60,7 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <a href="tel:+919876543210">
+            <a href="tel:+916377836377">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -102,7 +102,7 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <a href="tel:+919876543210">
+            <a href="tel:+916377836377">
               <button className="w-full bg-gold text-maroon px-6 py-3 rounded-full font-semibold flex items-center justify-center gap-2 mt-2">
                 <FaPhone />
                 Call Now

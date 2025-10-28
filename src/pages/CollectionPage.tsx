@@ -7,25 +7,25 @@ const CollectionPage = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const collections = [
-    { url: 'https://images.unsplash.com/photo-1611955167811-4711904bb9f8?w=800&q=80', title: 'Gold Necklace Set', category: 'Bridal' },
-    { url: 'https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&q=80', title: 'Traditional Gold Jewelry', category: 'Heritage' },
-    { url: 'https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=800&q=80', title: 'Gold Bangles Collection', category: 'Traditional' },
-    { url: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&q=80', title: 'Diamond Gold Ring', category: 'Luxury' },
-    { url: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&q=80', title: 'Wedding Gold Set', category: 'Bridal' },
-    { url: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&q=80', title: 'Gold Rings Collection', category: 'Modern' },
-    { url: 'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=800&q=80', title: 'Traditional Gold Ornaments', category: 'Heritage' },
-    { url: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80', title: 'Silver Jewelry Set', category: 'Silver' },
-    { url: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&q=80', title: 'Gold Chain Collection', category: 'Modern' },
-    { url: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&q=80', title: 'Luxury Gold Earrings', category: 'Luxury' },
-    { url: 'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&q=80', title: 'Premium Gold Pendant', category: 'Modern' },
-    { url: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&q=80', title: 'Bridal Gold Jewelry', category: 'Bridal' },
+    { url: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80', title: 'Gold Loan Settlement', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=800&q=80', title: 'Instant Cash Payment', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80', title: 'Transparent Evaluation', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80', title: 'Quick Documentation', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80', title: 'Best Market Rates', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80', title: 'All Bank Loans Accepted', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80', title: 'Secure Transactions', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80', title: 'Professional Service', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80', title: 'Expert Consultation', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80', title: 'Customer Support', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80', title: 'Fast Processing', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80', title: 'Trusted & Licensed', category: 'Service' },
   ]
 
   return (
     <>
       <Helmet>
-        <title>Gold Collection - Muthus Gold Company</title>
-        <meta name="description" content="Explore our premium gold and silver jewelry collection with exquisite designs." />
+        <title>Our Services - Muthus Gold Company</title>
+        <meta name="description" content="Comprehensive gold loan settlement services with instant cash payment and best rates." />
       </Helmet>
 
       <section className="pt-32 pb-16 bg-gradient-to-b from-maroon to-maroon/90 text-ivory">
@@ -37,10 +37,10 @@ const CollectionPage = () => {
             className="text-center"
           >
             <h1 className="text-4xl md:text-6xl font-playfair font-bold text-gold mb-6">
-              Our Gold Collection
+              Our Services
             </h1>
             <p className="text-xl text-ivory/90 max-w-3xl mx-auto">
-              Discover our stunning range of premium gold and silver jewelry
+              Comprehensive gold loan settlement and buying services
             </p>
           </motion.div>
         </div>

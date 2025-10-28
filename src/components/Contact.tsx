@@ -10,20 +10,20 @@ const Contact = () => {
     {
       icon: FaPhone,
       title: 'Call Us',
-      value: '+91 98765 43210',
-      link: 'tel:+919876543210',
+      value: '+91 63778 36377',
+      link: 'tel:+916377836377',
     },
     {
       icon: FaWhatsapp,
       title: 'WhatsApp',
-      value: '+91 98765 43210',
-      link: 'https://wa.me/919876543210',
+      value: '+91 63778 36377',
+      link: 'https://wa.me/916377836377',
     },
     {
       icon: FaEnvelope,
       title: 'Email',
-      value: 'info@muthusgold.com',
-      link: 'mailto:info@muthusgold.com',
+      value: 'muthusgoldcompany@gmail.com',
+      link: 'mailto:muthusgoldcompany@gmail.com',
     },
     {
       icon: FaClock,
@@ -104,7 +104,7 @@ const Contact = () => {
               </div>
             </motion.div>
 
-            <a href="tel:+919876543210">
+            <a href="tel:+916377836377">
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
