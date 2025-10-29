@@ -34,7 +34,7 @@ const Contact = () => {
   ]
 
   return (
-    <section id="contact" ref={ref} className="py-16 md:py-24 bg-gradient-to-b from-white to-ivory">
+    <section id="contact" ref={ref} className="py-16 md:py-24 bg-gradient-to-b from-white to-ivory" itemScope itemType="https://schema.org/LocalBusiness">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -42,11 +42,11 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-maroon mb-4">
-            Get In Touch
+          <h2 className="text-3xl md:text-5xl font-playfair font-bold text-maroon mb-4" itemProp="name">
+            Contact Muthus Gold Company Tamil Nadu
           </h2>
-          <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-            Ready to turn your gold into cash? Contact us today for instant quotes
+          <p className="text-lg text-charcoal/70 max-w-2xl mx-auto" itemProp="description">
+            Ready to turn your gold into cash? Contact Muthus Gold Company today for instant quotes and best gold rates in Tamil Nadu
           </p>
         </motion.div>
 
@@ -74,11 +74,12 @@ const Contact = () => {
                     <a
                       href={info.link}
                       className="text-charcoal/70 hover:text-gold transition-colors"
+                      itemProp={info.title === 'Call Us' || info.title === 'WhatsApp' ? 'telephone' : info.title === 'Email' ? 'email' : ''}
                     >
                       {info.value}
                     </a>
                   ) : (
-                    <p className="text-charcoal/70">{info.value}</p>
+                    <p className="text-charcoal/70" itemProp="openingHours">{info.value}</p>
                   )}
                 </div>
               </motion.div>
@@ -96,9 +97,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-maroon mb-2">Visit Us</h3>
-                  <p className="text-charcoal/70 leading-relaxed">
-                    123 Gold Street, Jewelry District<br />
-                    Chennai, Tamil Nadu 600001
+                  <p className="text-charcoal/70 leading-relaxed" itemProp="areaServed">
+                    All Over Tamil Nadu, India
                   </p>
                 </div>
               </div>

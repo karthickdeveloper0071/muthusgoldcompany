@@ -6,8 +6,41 @@ const AboutPage = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - Muthus Gold Company</title>
-        <meta name="description" content="Leading gold buyer in Tamil Nadu. Transparent, fair, and hassle-free gold loan settlement and buying services." />
+        <title>About Muthus Gold Company Tamil Nadu | Trusted Gold Buyers Since 2020 | Best Gold Exchange India</title>
+        <meta name="description" content="Learn about Muthus Gold Company - Leading gold buyers in Tamil Nadu since 2020. 5000+ happy customers, best gold rates, transparent gold loan settlement services across Tamil Nadu, India." />
+        <meta name="keywords" content="about muthus gold company, gold buyers tamil nadu history, trusted gold company tamil nadu, gold exchange company india, gold loan settlement company, best gold dealers tamil nadu, gold buying company history" />
+        <link rel="canonical" href="https://muthusgoldcompany.com/about" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="About Muthus Gold Company Tamil Nadu | Trusted Gold Buyers Since 2020" />
+        <meta property="og:description" content="Leading gold buyers in Tamil Nadu since 2020. 5000+ happy customers, transparent services, best gold rates across Tamil Nadu, India." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://muthusgoldcompany.com/about" />
+        <meta property="og:image" content="https://muthusgoldcompany.com/assets/Logo.png" />
+        
+        {/* Organization Schema */}
+        <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Muthus Gold Company",
+          "description": "Leading gold buying, selling and exchange company in Tamil Nadu, India since 2020",
+          "url": "https://muthusgoldcompany.com",
+          "logo": "https://muthusgoldcompany.com/assets/Logo.png",
+          "foundingDate": "2020",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Tamil Nadu",
+            "addressCountry": "India"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-6377836377",
+            "contactType": "customer service"
+          },
+          "knowsAbout": ["Gold Buying", "Gold Selling", "Gold Exchange", "Gold Loan Settlement"]
+        })}
+        </script>
       </Helmet>
 
       <section className="pt-32 pb-16 bg-gradient-to-b from-maroon to-maroon/90 text-ivory">
@@ -37,9 +70,11 @@ const AboutPage = () => {
               transition={{ duration: 0.8 }}
             >
               <img
-                src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&q=80"
+                src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=60"
                 alt="Gold services"
                 className="rounded-3xl shadow-2xl w-full h-[500px] object-cover"
+                loading="lazy"
+                decoding="async"
               />
             </motion.div>
 

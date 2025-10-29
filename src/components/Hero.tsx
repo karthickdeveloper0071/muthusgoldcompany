@@ -30,8 +30,12 @@ const Hero = () => {
         >
           <img 
             src={logo} 
-            alt="Muthus Gold" 
+            alt="Muthus Gold Company - Best Gold Buyers Tamil Nadu India" 
             className="h-32 md:h-40 w-auto mx-auto drop-shadow-2xl"
+            loading="eager"
+            fetchPriority="high"
+            width="160"
+            height="160"
           />
         </motion.div>
         <motion.h1
@@ -40,20 +44,29 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair font-bold text-ivory mb-6 leading-tight"
         >
-          Turn Your Gold into <br />
+          Tamil Nadu's Leading <br />
           <span className="text-gold" style={{
             textShadow: '0 0 30px rgba(212, 175, 55, 0.5)',
-          }}>Instant Cash</span>
+          }}>Gold Company</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-lg sm:text-xl md:text-2xl text-ivory/90 mb-10 max-w-3xl mx-auto"
+          className="text-lg sm:text-xl md:text-2xl text-ivory/90 mb-6 max-w-3xl mx-auto"
         >
-          We help you settle old gold loans and get the best market value for your jewelry with trust & transparency.
+          Best gold buyers in Tamil Nadu, India. Get instant cash for gold, settle gold loans, and gold exchange services with guaranteed best market rates.
         </motion.p>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-base sm:text-lg text-ivory/80 mb-8 max-w-2xl mx-auto"
+        >
+          <span className="text-gold font-semibold">Muthus Gold Company</span> - Your trusted partner for gold buying, selling & exchange across India
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}

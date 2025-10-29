@@ -26,3 +26,12 @@
     50% { background-position: 100% 50%; }
   }
 }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  content-visibility: auto;
+}

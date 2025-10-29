@@ -7,25 +7,54 @@ const CollectionPage = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   const collections = [
-    { url: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80', title: 'Gold Loan Settlement', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=800&q=80', title: 'Instant Cash Payment', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80', title: 'Transparent Evaluation', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80', title: 'Quick Documentation', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80', title: 'Best Market Rates', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80', title: 'All Bank Loans Accepted', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80', title: 'Secure Transactions', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80', title: 'Professional Service', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80', title: 'Expert Consultation', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80', title: 'Customer Support', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80', title: 'Fast Processing', category: 'Service' },
-    { url: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&q=80', title: 'Trusted & Licensed', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&q=60', title: 'Gold Loan Settlement', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=400&q=60', title: 'Instant Cash Payment', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&q=60', title: 'Transparent Evaluation', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400&q=60', title: 'Quick Documentation', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=60', title: 'Best Market Rates', category: 'Service' },
+    { url: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&q=60', title: 'All Bank Loans Accepted', category: 'Service' },
   ]
 
   return (
     <>
       <Helmet>
-        <title>Our Services - Muthus Gold Company</title>
-        <meta name="description" content="Comprehensive gold loan settlement services with instant cash payment and best rates." />
+        <title>Gold Services Collection Tamil Nadu | Muthus Gold Company | Loan Settlement & Gold Buying</title>
+        <meta name="description" content="Comprehensive gold services collection: loan settlement, instant cash payment, transparent evaluation, best market rates. Muthus Gold Company serves all Tamil Nadu, India." />
+        <meta name="keywords" content="gold services collection tamil nadu, gold loan settlement services, instant cash for gold, transparent gold evaluation, best gold rates tamil nadu, gold buying services collection" />
+        <link rel="canonical" href="https://muthusgoldcompany.com/collection" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Gold Services Collection Tamil Nadu | Muthus Gold Company" />
+        <meta property="og:description" content="Comprehensive gold services: loan settlement, instant cash, transparent evaluation. Best rates in Tamil Nadu." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://muthusgoldcompany.com/collection" />
+        <meta property="og:image" content="https://muthusgoldcompany.com/assets/Logo.png" />
+        
+        {/* Service Collection Schema */}
+        <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": "Muthus Gold Company Services Collection",
+          "description": "Comprehensive collection of gold services offered by Muthus Gold Company in Tamil Nadu",
+          "url": "https://muthusgoldcompany.com/collection",
+          "numberOfItems": collections.length,
+          "itemListElement": collections.map((item, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+              "@type": "Service",
+              "name": item.title,
+              "description": `${item.title} service provided by Muthus Gold Company in Tamil Nadu`,
+              "category": item.category,
+              "provider": {
+                "@type": "Organization",
+                "name": "Muthus Gold Company"
+              }
+            }
+          }))
+        })}
+        </script>
       </Helmet>
 
       <section className="pt-32 pb-16 bg-gradient-to-b from-maroon to-maroon/90 text-ivory">

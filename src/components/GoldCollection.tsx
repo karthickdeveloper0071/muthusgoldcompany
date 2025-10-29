@@ -6,10 +6,10 @@ const GoldCollection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const collections = [
-    { url: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80', title: 'Instant Loan Settlement', desc: 'Clear your gold loans within 24 hours' },
-    { url: 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=800&q=80', title: 'Best Market Rates', desc: 'Get maximum value for your gold' },
-    { url: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80', title: 'Zero Hidden Charges', desc: 'Complete transparency in all dealings' },
-    { url: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80', title: 'Quick Documentation', desc: 'Simple paperwork, fast processing' },
+    { url: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&q=70&auto=format', title: 'Instant Loan Settlement', desc: 'Clear your gold loans within 24 hours' },
+    { url: 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?w=600&q=70&auto=format', title: 'Best Market Rates', desc: 'Get maximum value for your gold' },
+    { url: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&q=70&auto=format', title: 'Zero Hidden Charges', desc: 'Complete transparency in all dealings' },
+    { url: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&q=70&auto=format', title: 'Quick Documentation', desc: 'Simple paperwork, fast processing' },
   ]
   return (
     <section ref={ref} className="py-16 md:py-24 bg-gradient-to-b from-white via-ivory to-white relative overflow-hidden">
@@ -47,6 +47,8 @@ const GoldCollection = () => {
                   src={item.url}
                   alt={item.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-maroon via-maroon/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
               </div>

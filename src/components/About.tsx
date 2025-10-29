@@ -7,11 +7,13 @@ const About = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const features = [
-    'Instant gold loan settlement',
-    'Best market rates guaranteed',
-    'Transparent evaluation process',
-    'Quick cash payment',
-    'Trusted & licensed service',
+    'Leading gold buyers in Tamil Nadu',
+    'Best gold exchange rates in India',
+    'Instant gold loan settlement services',
+    'Transparent gold evaluation process',
+    'Quick cash payment for gold',
+    'Licensed gold company in Tamil Nadu',
+    'Trusted gold dealers across India'
   ]
 
   return (
@@ -26,10 +28,11 @@ const About = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gold-gradient opacity-20 blur-2xl rounded-3xl" />
               <img
-                src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=800&q=80"
+                src="https://images.unsplash.com/photo-1610375461246-83df859d849d?w=600&q=70"
                 alt="Gold jewelry"
                 className="relative rounded-3xl shadow-2xl w-full h-[400px] object-cover"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           </motion.div>
@@ -40,13 +43,16 @@ const About = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h2 className="text-3xl md:text-5xl font-playfair font-bold text-maroon mb-6">
-              Your Trusted Partner in Gold Services
+              Tamil Nadu's Most Trusted Gold Company
             </h2>
             <p className="text-lg text-charcoal/80 mb-6 leading-relaxed">
-              At Muthus Gold Company, we specialize in helping you unlock the value of your gold. Whether you need to settle an old gold loan or sell your jewelry, we provide transparent, fair, and instant solutions.
+              <strong>Muthus Gold Company</strong> is the leading gold buying and exchange company in Tamil Nadu, India. We specialize in providing instant cash for gold, gold loan settlement services, and gold exchange with the best market rates across Tamil Nadu.
+            </p>
+            <p className="text-lg text-charcoal/80 mb-6 leading-relaxed">
+              As one of the most trusted gold companies in India, we serve customers throughout Tamil Nadu with transparent gold buying services, fair gold exchange rates, and professional gold loan clearance solutions.
             </p>
             <p className="text-lg text-charcoal/80 mb-8 leading-relaxed">
-              Our expert team ensures you get the best market rates with complete transparency. We handle all paperwork and provide immediate cash payment.
+              Our expert team of gold evaluators ensures you get the best gold rates in Tamil Nadu with complete transparency. We handle all documentation and provide immediate cash payment for your gold jewelry and ornaments.
             </p>
 
             <div className="space-y-3 mb-8">

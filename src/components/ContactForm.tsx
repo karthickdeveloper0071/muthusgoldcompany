@@ -6,19 +6,22 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     mobile: '',
-    email: '',
     address: '',
   })
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
-    const message = `*New Inquiry from Muthus Gold Website*%0A%0A*Name:* ${formData.name}%0A*Mobile:* ${formData.mobile}%0A*Email:* ${formData.email}%0A*Address:* ${formData.address}`
+    const message = `*New Inquiry from Muthus Gold Website*
+
+*Name:* ${formData.name}
+*Mobile:* ${formData.mobile}
+*Address:* ${formData.address}`
     
-    const whatsappUrl = `https://wa.me/916377836377?text=${message}`
+    const whatsappUrl = `https://wa.me/916377836377?text=${encodeURIComponent(message)}`
     window.open(whatsappUrl, '_blank')
     
-    setFormData({ name: '', mobile: '', email: '', address: '' })
+    setFormData({ name: '', mobile: '', address: '' })
   }
 
   return (
@@ -75,19 +78,7 @@ const ContactForm = () => {
               />
             </div>
 
-            <div>
-              <label className="block text-maroon font-semibold mb-2">
-                Email Address *
-              </label>
-              <input
-                type="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 border-2 border-gold/30 rounded-xl focus:border-gold focus:outline-none transition-colors"
-                placeholder="Enter your email"
-              />
-            </div>
+           
 
             <div>
               <label className="block text-maroon font-semibold mb-2">

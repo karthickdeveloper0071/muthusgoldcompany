@@ -53,8 +53,56 @@ const ServicesPage = () => {
   return (
     <>
       <Helmet>
-        <title>Services - Muthus Gold Company</title>
-        <meta name="description" content="Comprehensive gold services including loan clearance, gold buying, and instant cash conversion." />
+        <title>Gold Services Tamil Nadu | Gold Loan Clearance | Gold Buying | Muthus Gold Company India</title>
+        <meta name="description" content="Comprehensive gold services in Tamil Nadu: Gold loan clearance, gold & silver buying, loan-to-cash conversion, 24-hour service. Best rates guaranteed. Call +91-6377836377" />
+        <meta name="keywords" content="gold services tamil nadu, gold loan clearance tamil nadu, gold buying services, silver buying tamil nadu, loan to cash conversion, 24 hour gold service, gold loan settlement services, instant cash for gold tamil nadu" />
+        <link rel="canonical" href="https://muthusgoldcompany.com/services" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Gold Services Tamil Nadu | Gold Loan Clearance | Muthus Gold Company" />
+        <meta property="og:description" content="Comprehensive gold services: loan clearance, gold buying, instant cash conversion. 24-hour service across Tamil Nadu." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://muthusgoldcompany.com/services" />
+        <meta property="og:image" content="https://muthusgoldcompany.com/assets/Logo.png" />
+        
+        {/* Service Schema */}
+        <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gold Services by Muthus Gold Company",
+          "description": "Comprehensive gold services including loan clearance, gold buying, and instant cash conversion in Tamil Nadu",
+          "provider": {
+            "@type": "Organization",
+            "name": "Muthus Gold Company",
+            "telephone": "+91-6377836377"
+          },
+          "areaServed": "Tamil Nadu, India",
+          "serviceType": ["Gold Loan Clearance", "Gold Buying", "Silver Buying", "Loan to Cash Conversion", "24 Hour Gold Service"],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Gold Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Gold Loan Clearance",
+                  "description": "Instant settlement of existing gold loans from banks and finance companies"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Gold & Silver Buying",
+                  "description": "Best market rates for gold and silver jewelry with transparent evaluation"
+                }
+              }
+            ]
+          }
+        })}
+        </script>
       </Helmet>
 
       <section className="pt-32 pb-16 bg-gradient-to-b from-maroon to-maroon/90 text-ivory">

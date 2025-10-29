@@ -7,8 +7,7 @@ import img3 from '../assets/muthusold2.jpg'
 import img4 from '../assets/muthus gold 4.jpg'
 import img5 from '../assets/muthus gold 5.jpg'
 import img6 from '../assets/muthus gold 6.jpg'
-import img7 from '../assets/muthus gold 7.jpg'
-import img8 from '../assets/muthus gold 8.jpg'
+
 
 const Gallery = () => {
   const ref = useRef(null)
@@ -22,8 +21,6 @@ const Gallery = () => {
     { url: img4, title: 'Luxury Gold Sets' },
     { url: img5, title: 'Bridal Collection' },
     { url: img6, title: 'Diamond & Gold' },
-    { url: img7, title: 'Classic Ornaments' },
-    { url: img8, title: 'Heritage Jewelry' },
   ]
 
   return (
@@ -59,6 +56,9 @@ const Gallery = () => {
                 alt={image.title}
                 className="w-full h-64 md:h-80 object-cover transition-transform duration-500 group-hover:scale-110"
                 loading="lazy"
+                decoding="async"
+                width="400"
+                height="320"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-maroon/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
                 <h3 className="text-ivory font-semibold text-lg">{image.title}</h3>
