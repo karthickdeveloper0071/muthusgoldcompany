@@ -68,9 +68,9 @@ const addStructuredData = () => {
     '@type': 'LocalBusiness',
     name: 'Muthus Gold Company',
     description: 'Leading gold buyers and exchange company in Tamil Nadu, India',
-    url: 'https://muthusgoldcompany.com',
+    url: 'https://muthusgold.com',
     telephone: '+91-6377836377',
-    email: 'muthusgoldcompany@gmail.com',
+    email: 'muthusgold@gmail.com',
     address: {
       '@type': 'PostalAddress',
       addressRegion: 'Tamil Nadu',

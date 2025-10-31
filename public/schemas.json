@@ -2,13 +2,13 @@
   "localBusiness": {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://muthusgoldcompany.com/#localbusiness",
+    "@id": "https://muthusgold.com/#localbusiness",
     "name": "Muthus Gold Company",
     "description": "Leading gold buyers and exchange company in Tamil Nadu, India. Instant cash for gold, gold loan settlement services with best market rates.",
-    "url": "https://muthusgoldcompany.com",
+    "url": "https://muthusgold.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://muthusgoldcompany.com/assets/Logo.png"
+      "url": "https://muthusgold.com/assets/Logo.png"
     },
     "telephone": "+91-6377836377",
     "address": {
@@ -28,12 +28,12 @@
   "organization": {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://muthusgoldcompany.com/#organization",
+    "@id": "https://muthusgold.com/#organization",
     "name": "Muthus Gold Company",
-    "url": "https://muthusgoldcompany.com",
+    "url": "https://muthusgold.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://muthusgoldcompany.com/assets/Logo.png"
+      "url": "https://muthusgold.com/assets/Logo.png"
     },
     "contactPoint": {
       "@type": "ContactPoint",

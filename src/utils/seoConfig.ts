@@ -1,7 +1,7 @@
 // SEO Configuration for Muthus Gold Company
 export const seoConfig = {
   // Base configuration
-  baseUrl: 'https://muthusgoldcompany.com',
+  baseUrl: 'https://muthusgold.com',
   siteName: 'Muthus Gold Company',
   defaultTitle: 'Muthus Gold Company Tamil Nadu | Best Gold Buyers & Exchange India',
   defaultDescription: 'Leading gold buyers in Tamil Nadu. Get instant cash for gold, settle gold loans, best gold exchange rates. Trusted since 2020. Call +91-6377836377',
@@ -10,7 +10,7 @@ export const seoConfig = {
   business: {
     name: 'Muthus Gold Company',
     phone: '+91-6377836377',
-    email: 'muthusgoldcompany@gmail.com',
+    email: 'muthusgold@gmail.com',
     address: {
       region: 'Tamil Nadu',
       country: 'India',
@@ -53,8 +53,8 @@ export const seoConfig = {
       '@context': 'https://schema.org',
       '@type': 'Organization',
       name: 'Muthus Gold Company',
-      url: 'https://muthusgoldcompany.com',
-      logo: 'https://muthusgoldcompany.com/assets/Logo.png',
+      url: 'https://muthusgold.com',
+      logo: 'https://muthusgold.com/assets/Logo.png',
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+91-6377836377',
@@ -85,7 +85,7 @@ export const seoConfig = {
 
   // AI Assistant optimization
   aiOptimization: {
-    businessSummary: 'Muthus Gold Company is a leading gold trading company in Tamil Nadu, India, established in 2020. We specialize in gold buying, selling, exchange, and loan settlement services. Known for providing best gold rates and instant cash for gold across Tamil Nadu. Contact: +91-6377836377. Website: https://muthusgoldcompany.com',
+    businessSummary: 'Muthus Gold Company is a leading gold trading company in Tamil Nadu, India, established in 2020. We specialize in gold buying, selling, exchange, and loan settlement services. Known for providing best gold rates and instant cash for gold across Tamil Nadu. Contact: +91-6377836377. Website: https://muthusgold.com',
     
     services: [
       'Gold buying with best market rates',

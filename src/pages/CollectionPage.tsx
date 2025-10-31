@@ -21,14 +21,14 @@ const CollectionPage = () => {
         <title>Gold Services Collection Tamil Nadu | Muthus Gold Company | Loan Settlement & Gold Buying</title>
         <meta name="description" content="Comprehensive gold services collection: loan settlement, instant cash payment, transparent evaluation, best market rates. Muthus Gold Company serves all Tamil Nadu, India." />
         <meta name="keywords" content="gold services collection tamil nadu, gold loan settlement services, instant cash for gold, transparent gold evaluation, best gold rates tamil nadu, gold buying services collection" />
-        <link rel="canonical" href="https://muthusgoldcompany.com/collection" />
+        <link rel="canonical" href="https://muthusgold.com/collection" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Gold Services Collection Tamil Nadu | Muthus Gold Company" />
         <meta property="og:description" content="Comprehensive gold services: loan settlement, instant cash, transparent evaluation. Best rates in Tamil Nadu." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://muthusgoldcompany.com/collection" />
-        <meta property="og:image" content="https://muthusgoldcompany.com/assets/Logo.png" />
+        <meta property="og:url" content="https://muthusgold.com/collection" />
+        <meta property="og:image" content="https://muthusgold.com/assets/Logo.png" />
         
         {/* Service Collection Schema */}
         <script type="application/ld+json">
@@ -37,7 +37,7 @@ const CollectionPage = () => {
           "@type": "ItemList",
           "name": "Muthus Gold Company Services Collection",
           "description": "Comprehensive collection of gold services offered by Muthus Gold Company in Tamil Nadu",
-          "url": "https://muthusgoldcompany.com/collection",
+          "url": "https://muthusgold.com/collection",
           "numberOfItems": collections.length,
           "itemListElement": collections.map((item, index) => ({
             "@type": "ListItem",

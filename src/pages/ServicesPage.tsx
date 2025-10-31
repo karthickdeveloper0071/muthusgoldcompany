@@ -56,14 +56,14 @@ const ServicesPage = () => {
         <title>Gold Services Tamil Nadu | Gold Loan Clearance | Gold Buying | Muthus Gold Company India</title>
         <meta name="description" content="Comprehensive gold services in Tamil Nadu: Gold loan clearance, gold & silver buying, loan-to-cash conversion, 24-hour service. Best rates guaranteed. Call +91-6377836377" />
         <meta name="keywords" content="gold services tamil nadu, gold loan clearance tamil nadu, gold buying services, silver buying tamil nadu, loan to cash conversion, 24 hour gold service, gold loan settlement services, instant cash for gold tamil nadu" />
-        <link rel="canonical" href="https://muthusgoldcompany.com/services" />
+        <link rel="canonical" href="https://muthusgold.com/services" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Gold Services Tamil Nadu | Gold Loan Clearance | Muthus Gold Company" />
         <meta property="og:description" content="Comprehensive gold services: loan clearance, gold buying, instant cash conversion. 24-hour service across Tamil Nadu." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://muthusgoldcompany.com/services" />
-        <meta property="og:image" content="https://muthusgoldcompany.com/assets/Logo.png" />
+        <meta property="og:url" content="https://muthusgold.com/services" />
+        <meta property="og:image" content="https://muthusgold.com/assets/Logo.png" />
         
         {/* Service Schema */}
         <script type="application/ld+json">

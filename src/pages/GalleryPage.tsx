@@ -31,14 +31,14 @@ const GalleryPage = () => {
         <title>Gold Gallery Tamil Nadu | Muthus Gold Company Collection | Premium Gold Jewelry Images</title>
         <meta name="description" content="Explore Muthus Gold Company's premium gold jewelry gallery. View our exquisite gold collection images from Tamil Nadu's leading gold buyers and dealers." />
         <meta name="keywords" content="gold gallery tamil nadu, muthus gold collection, gold jewelry images, premium gold gallery, gold company photos tamil nadu, gold jewelry collection india" />
-        <link rel="canonical" href="https://muthusgoldcompany.com/gallery" />
+        <link rel="canonical" href="https://muthusgold.com/gallery" />
         
         {/* Open Graph */}
         <meta property="og:title" content="Gold Gallery Tamil Nadu | Muthus Gold Company Collection" />
         <meta property="og:description" content="Explore premium gold jewelry gallery from Tamil Nadu's leading gold buyers. View our exquisite collection." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://muthusgoldcompany.com/gallery" />
-        <meta property="og:image" content="https://muthusgoldcompany.com/assets/muthusgold.jpg" />
+        <meta property="og:url" content="https://muthusgold.com/gallery" />
+        <meta property="og:image" content="https://muthusgold.com/assets/muthusgold.jpg" />
         
         {/* Image Gallery Schema */}
         <script type="application/ld+json">
@@ -47,15 +47,15 @@ const GalleryPage = () => {
           "@type": "ImageGallery",
           "name": "Muthus Gold Company Gallery",
           "description": "Premium gold jewelry collection gallery from Tamil Nadu's leading gold buyers",
-          "url": "https://muthusgoldcompany.com/gallery",
+          "url": "https://muthusgold.com/gallery",
           "publisher": {
             "@type": "Organization",
             "name": "Muthus Gold Company",
-            "logo": "https://muthusgoldcompany.com/assets/Logo.png"
+            "logo": "https://muthusgold.com/assets/Logo.png"
           },
           "image": images.map((img) => ({
             "@type": "ImageObject",
-            "url": `https://muthusgoldcompany.com/assets/${img.title.toLowerCase().replace(/\s+/g, '-')}.jpg`,
+            "url": `https://muthusgold.com/assets/${img.title.toLowerCase().replace(/\s+/g, '-')}.jpg`,
             "name": img.title,
             "description": `Premium ${img.title} from Muthus Gold Company Tamil Nadu`
           }))

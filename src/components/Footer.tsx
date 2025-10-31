@@ -1,4 +1,4 @@
-import { FaInstagram, FaWhatsapp, FaEnvelope, FaPhone } from 'react-icons/fa'
+import { FaInstagram, FaWhatsapp, FaEnvelope, FaPhone, FaFacebook } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -23,13 +23,16 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-gold mb-4">Connect With Us</h4>
             <div className="flex gap-4 mb-4">
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
+              <a href="https://www.facebook.com/share/17t2nJTAGa/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
+                <FaFacebook className="text-xl" />
+              </a>
+              <a href="https://www.instagram.com/muthusgoldcompany " target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
                 <FaInstagram className="text-xl" />
               </a>
               <a href="https://wa.me/916377836377" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
                 <FaWhatsapp className="text-xl" />
               </a>
-              <a href="mailto:muthusgoldcompany@gmail.com" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
+              <a href="mailto:muthusgold@gmail.com" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
                 <FaEnvelope className="text-xl" />
               </a>
               <a href="tel:+916377836377" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">

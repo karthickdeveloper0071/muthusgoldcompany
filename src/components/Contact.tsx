@@ -22,8 +22,8 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       title: 'Email',
-      value: 'muthusgoldcompany@gmail.com',
-      link: 'mailto:muthusgoldcompany@gmail.com',
+      value: 'muthusgold@gmail.com',
+      link: 'mailto:muthusgold@gmail.com',
     },
     {
       icon: FaClock,
