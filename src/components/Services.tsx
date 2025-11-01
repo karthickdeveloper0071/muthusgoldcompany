@@ -10,22 +10,26 @@ const Services = () => {
     {
       icon: FaUniversity,
       title: 'Gold Loan Clearance',
-      description: 'We settle your existing gold loans instantly and help you get your jewelry back hassle-free.',
+      description: 'We settle your existing gold loans instantly and help you get your jewelry back hassle-free. Contact us for immediate assistance.',
+      link: '#contact'
     },
     {
       icon: FaCoins,
       title: 'Gold & Silver Buying',
-      description: 'Get the best market rates for your gold and silver jewelry with transparent evaluation.',
+      description: 'Get the best market rates for your gold and silver jewelry with transparent evaluation. See our gallery for examples.',
+      link: '#gallery'
     },
     {
       icon: FaExchangeAlt,
       title: 'Loan-to-Cash Conversion',
-      description: 'Convert your pledged gold directly to cash without any hidden charges or delays.',
+      description: 'Convert your pledged gold directly to cash without any hidden charges or delays. Learn about our process.',
+      link: '#about'
     },
     {
       icon: FaClock,
       title: '24 Hour Service',
-      description: 'Quick processing and instant cash payment within 24 hours of evaluation.',
+      description: 'Quick processing and instant cash payment within 24 hours of evaluation. Contact us anytime.',
+      link: '#contact'
     },
   ]
 
@@ -42,7 +46,7 @@ const Services = () => {
             Our Premium Services
           </h2>
           <p className="text-lg text-charcoal/70 max-w-2xl mx-auto">
-            Comprehensive gold solutions tailored to your needs
+            Comprehensive gold solutions tailored to your needs. <a href="#contact" className="text-maroon hover:text-maroon/80 underline transition-colors">Contact us</a> for personalized service or <a href="#about" className="text-maroon hover:text-maroon/80 underline transition-colors">learn more about our company</a>.
           </p>
         </motion.div>
 
@@ -64,9 +68,14 @@ const Services = () => {
                 <h3 className="text-xl font-playfair font-bold text-maroon mb-3">
                   {service.title}
                 </h3>
-                <p className="text-charcoal/70 leading-relaxed">
+                <p className="text-charcoal/70 leading-relaxed mb-4">
                   {service.description}
                 </p>
+                {service.link && (
+                  <a href={service.link} className="text-maroon hover:text-maroon/80 font-medium underline transition-colors">
+                    Learn More →
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}

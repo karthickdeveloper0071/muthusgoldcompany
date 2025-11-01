@@ -1,0 +1,21 @@
+{
+  "name": "Muthus Gold",
+  "short_name": "Muthus Gold",
+  "description": "Tamil Nadu's #1 gold buyers. Instant cash for gold, best gold rates, gold loan settlement.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a0a0a",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "/src/assets/Logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/src/assets/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

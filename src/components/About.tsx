@@ -46,13 +46,13 @@ const About = () => {
               Tamil Nadu's Most Trusted Gold Company
             </h2>
             <p className="text-lg text-charcoal/80 mb-6 leading-relaxed">
-              <strong>Muthus Gold Company</strong> is the leading gold buying and exchange company in Tamil Nadu, India. We specialize in providing instant cash for gold, gold loan settlement services, and gold exchange with the best market rates across Tamil Nadu.
+              <strong>Muthus Gold Company</strong> is the leading gold buying and exchange company in Tamil Nadu, India. We specialize in providing instant cash for gold, <a href="#services" className="text-maroon hover:text-maroon/80 underline transition-colors">gold loan settlement services</a>, and <a href="#services" className="text-maroon hover:text-maroon/80 underline transition-colors">gold exchange</a> with the best market rates across Tamil Nadu.
             </p>
             <p className="text-lg text-charcoal/80 mb-6 leading-relaxed">
-              As one of the most trusted gold companies in India, we serve customers throughout Tamil Nadu with transparent gold buying services, fair gold exchange rates, and professional gold loan clearance solutions.
+              As one of the most trusted gold companies in India, we serve customers throughout Tamil Nadu with transparent <a href="#services" className="text-maroon hover:text-maroon/80 underline transition-colors">gold buying services</a>, fair gold exchange rates, and professional gold loan clearance solutions. <a href="#contact" className="text-maroon hover:text-maroon/80 underline transition-colors">Contact us today</a> for immediate assistance.
             </p>
             <p className="text-lg text-charcoal/80 mb-8 leading-relaxed">
-              Our expert team of gold evaluators ensures you get the best gold rates in Tamil Nadu with complete transparency. We handle all documentation and provide immediate cash payment for your gold jewelry and ornaments.
+              Our expert team of gold evaluators ensures you get the best gold rates in Tamil Nadu with complete transparency. We handle all documentation and provide immediate cash payment for your gold jewelry and ornaments. View our <a href="#gallery" className="text-maroon hover:text-maroon/80 underline transition-colors">gallery</a> to see examples of our work.
             </p>
 
             <div className="space-y-3 mb-8">
@@ -70,15 +70,26 @@ const About = () => {
               ))}
             </div>
 
-            <a href="#services">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-maroon-gradient text-ivory px-8 py-3 rounded-full font-semibold shadow-lg"
-              >
-                Know More
-              </motion.button>
-            </a>
+            <div className="flex flex-wrap gap-4">
+              <a href="#services">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-maroon-gradient text-ivory px-8 py-3 rounded-full font-semibold shadow-lg"
+                >
+                  Our Services
+                </motion.button>
+              </a>
+              <a href="#contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="bg-transparent border-2 border-maroon text-maroon px-8 py-3 rounded-full font-semibold hover:bg-maroon hover:text-ivory transition-all"
+                >
+                  Get Quote
+                </motion.button>
+              </a>
+            </div>
           </motion.div>
         </div>
       </div>

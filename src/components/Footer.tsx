@@ -4,20 +4,32 @@ const Footer = () => {
   return (
     <footer className="bg-charcoal text-ivory py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-playfair font-bold text-gold mb-4">Muthus Gold</h3>
-            <p className="text-ivory/70 leading-relaxed">
-              Your trusted partner for gold loan settlement and jewelry buying services. We provide transparent, fair, and instant solutions.
+            <p className="text-ivory/70 leading-relaxed mb-4">
+              Tamil Nadu's leading <a href="#services" className="text-gold hover:text-gold/80 underline transition-colors">gold buyers</a> and exchange company. We provide transparent, fair, and instant solutions.
             </p>
+            <a href="#contact" className="text-gold hover:text-gold/80 underline transition-colors">Get instant quote →</a>
           </div>
           <div>
             <h4 className="font-semibold text-gold mb-4">Quick Links</h4>
             <div className="space-y-2">
               <a href="#home" className="block text-ivory/70 hover:text-gold transition-colors">Home</a>
-              <a href="#about" className="block text-ivory/70 hover:text-gold transition-colors">About</a>
-              <a href="#services" className="block text-ivory/70 hover:text-gold transition-colors">Services</a>
+              <a href="#about" className="block text-ivory/70 hover:text-gold transition-colors">About Us</a>
+              <a href="#services" className="block text-ivory/70 hover:text-gold transition-colors">Our Services</a>
+              <a href="#gallery" className="block text-ivory/70 hover:text-gold transition-colors">Gallery</a>
               <a href="#contact" className="block text-ivory/70 hover:text-gold transition-colors">Contact</a>
+            </div>
+          </div>
+          <div>
+            <h4 className="font-semibold text-gold mb-4">Our Services</h4>
+            <div className="space-y-2">
+              <a href="#services" className="block text-ivory/70 hover:text-gold transition-colors">Gold Loan Settlement</a>
+              <a href="#services" className="block text-ivory/70 hover:text-gold transition-colors">Gold Buying</a>
+              <a href="#services" className="block text-ivory/70 hover:text-gold transition-colors">Gold Exchange</a>
+              <a href="#services" className="block text-ivory/70 hover:text-gold transition-colors">Silver Buying</a>
+              <a href="#services" className="block text-ivory/70 hover:text-gold transition-colors">24 Hour Service</a>
             </div>
           </div>
           <div>

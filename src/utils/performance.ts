@@ -1,131 +1,83 @@
-// Performance optimization utilities for better SEO and user experience
+// Performance monitoring and optimization utilities
+export const performanceUtils = {
+  // Lazy load images
+  lazyLoadImage: (img: HTMLImageElement) => {
+    const imageObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const img = entry.target as HTMLImageElement;
+          img.src = img.dataset.src || '';
+          img.classList.remove('lazy');
+          imageObserver.unobserve(img);
+        }
+      });
+    });
+    imageObserver.observe(img);
+  },
 
-// Image optimization
-export const optimizeImage = (src: string, width?: number, quality = 80) => {
-  // For production, you might want to use a service like Cloudinary or ImageKit
-  if (width) {
-    return `${src}?w=${width}&q=${quality}`
-  }
-  return `${src}?q=${quality}`
-}
+  // Preload critical resources
+  preloadResource: (href: string, as: string) => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.href = href;
+    link.as = as;
+    document.head.appendChild(link);
+  },
 
-// Lazy loading configuration
-export const lazyLoadConfig = {
-  threshold: 0.1,
-  rootMargin: '50px 0px',
-}
+  // Measure Core Web Vitals
+  measureWebVitals: () => {
+    // Largest Contentful Paint
+    new PerformanceObserver((entryList) => {
+      const entries = entryList.getEntries();
+      const lastEntry = entries[entries.length - 1];
+      console.log('LCP:', lastEntry.startTime);
+    }).observe({ entryTypes: ['largest-contentful-paint'] });
 
-// Critical CSS for above-the-fold content
-export const criticalCSS = `
-  /* Critical styles for immediate rendering */
-  .hero-section {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #8B0000 0%, #A0522D 100%);
-  }
-  
-  .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    background: rgba(139, 0, 0, 0.95);
-  }
-  
-  .loading-spinner {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border: 3px solid #f3f3f3;
-    border-top: 3px solid #8B0000;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-`
+    // First Input Delay
+    new PerformanceObserver((entryList) => {
+      const entries = entryList.getEntries();
+      entries.forEach(entry => {
+        console.log('FID:', entry.processingStart - entry.startTime);
+      });
+    }).observe({ entryTypes: ['first-input'] });
 
-// Preload critical resources
-export const preloadResources = [
-  { rel: 'preload', href: '/assets/Logo.png', as: 'image' },
-  { rel: 'preload', href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap', as: 'style' },
-  { rel: 'dns-prefetch', href: '//fonts.googleapis.com' },
-  { rel: 'dns-prefetch', href: '//fonts.gstatic.com' },
-]
+    // Cumulative Layout Shift
+    new PerformanceObserver((entryList) => {
+      let clsValue = 0;
+      const entries = entryList.getEntries();
+      entries.forEach(entry => {
+        if (!entry.hadRecentInput) {
+          clsValue += entry.value;
+        }
+      });
+      console.log('CLS:', clsValue);
+    }).observe({ entryTypes: ['layout-shift'] });
+  },
 
-// Web Vitals optimization
-export const webVitalsConfig = {
-  // Largest Contentful Paint (LCP) - should be < 2.5s
-  lcpThreshold: 2500,
-  
-  // First Input Delay (FID) - should be < 100ms
-  fidThreshold: 100,
-  
-  // Cumulative Layout Shift (CLS) - should be < 0.1
-  clsThreshold: 0.1,
-  
-  // First Contentful Paint (FCP) - should be < 1.8s
-  fcpThreshold: 1800,
-}
-
-// Service Worker registration for caching
-export const registerServiceWorker = () => {
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-        .then((registration) => {
-          console.log('SW registered: ', registration)
-        })
-        .catch((registrationError) => {
-          console.log('SW registration failed: ', registrationError)
-        })
-    })
-  }
-}
-
-// Intersection Observer for lazy loading
-export const createIntersectionObserver = (callback: IntersectionObserverCallback) => {
-  return new IntersectionObserver(callback, {
-    threshold: lazyLoadConfig.threshold,
-    rootMargin: lazyLoadConfig.rootMargin,
-  })
-}
-
-// Debounce function for performance
-export const debounce = (func: Function, wait: number) => {
-  let timeout: ReturnType<typeof setTimeout>
-  return function executedFunction(...args: any[]) {
-    const later = () => {
-      clearTimeout(timeout)
-      func(...args)
+  // Optimize images
+  optimizeImage: (src: string, width?: number, quality = 80) => {
+    if (src.includes('unsplash.com')) {
+      const params = new URLSearchParams();
+      if (width) params.set('w', width.toString());
+      params.set('q', quality.toString());
+      params.set('fm', 'webp');
+      params.set('auto', 'format');
+      return `${src}?${params.toString()}`;
     }
-    clearTimeout(timeout)
-    timeout = setTimeout(later, wait)
-  }
-}
+    return src;
+  },
 
-// Throttle function for scroll events
-export const throttle = (func: Function, limit: number) => {
-  let inThrottle: boolean
-  return function(this: any, ...args: any[]) {
-    if (!inThrottle) {
-      func.apply(this, args)
-      inThrottle = true
-      setTimeout(() => inThrottle = false, limit)
+  // Service Worker registration
+  registerServiceWorker: async () => {
+    if ('serviceWorker' in navigator) {
+      try {
+        await navigator.serviceWorker.register('/sw.js');
+        console.log('Service Worker registered');
+      } catch (error) {
+        console.log('Service Worker registration failed');
+      }
     }
   }
-}
+};
 
-export default {
-  optimizeImage,
-  lazyLoadConfig,
-  criticalCSS,
-  preloadResources,
-  webVitalsConfig,
-  registerServiceWorker,
-  createIntersectionObserver,
-  debounce,
-  throttle,
-}
+export default performanceUtils;

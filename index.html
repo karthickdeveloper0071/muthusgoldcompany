@@ -56,18 +56,38 @@
     <link rel="alternate" hreflang="hi" href="https://muthusgold.com/hi" />
     <link rel="alternate" hreflang="x-default" href="https://muthusgold.com" />
     
-    <!-- Preconnect for performance -->
+    <!-- Performance Optimizations -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" href="/src/main.tsx" as="script" />
+    <link rel="preload" href="/src/assets/Logo.png" as="image" />
+    <link rel="modulepreload" href="/src/main.tsx" />
+    
+    <!-- Resource Hints -->
+    <link rel="prefetch" href="/src/components/Services.tsx" />
+    <link rel="prefetch" href="/src/components/About.tsx" />
+    
+    <!-- Critical CSS Inline (Add your critical CSS here) -->
+    <style>
+      /* Critical above-the-fold styles */
+      body { margin: 0; font-family: system-ui, -apple-system, sans-serif; }
+      #root { min-height: 100vh; }
+      .hero-loading { background: linear-gradient(135deg, #1a0a0a 0%, #D4AF37 100%); min-height: 100vh; }
+    </style>
     
     <!-- DNS Prefetch -->
     <link rel="dns-prefetch" href="//www.google-analytics.com" />
     <link rel="dns-prefetch" href="//www.googletagmanager.com" />
     <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//images.unsplash.com" />
     
     <!-- Google Search Console Verification -->
     <meta name="google-site-verification" content="muthus-gold-verification-code" />
+    
+    <!-- Additional SEO Meta -->
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="manifest" href="/manifest.json" />
     
     <!-- Performance Optimization -->
     <meta name="theme-color" content="#D4AF37" />
@@ -88,17 +108,26 @@
     <meta name="chatgpt:location" content="Tamil Nadu, India" />
     <meta name="assistant:company_info" content="Muthus Gold Company is a trusted gold trading company in Tamil Nadu, India, offering instant cash for gold, gold loan settlement, and best gold exchange rates since 2020" />
     
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0X3RH0HJ0G"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'GA_MEASUREMENT_ID');
+      gtag('config', 'G-0X3RH0HJ0G');
     </script>
     
     <!-- Essential Schema Only (Load others async) -->
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Muthus Gold","alternateName":["Muthus Gold Company","Muthus Gold Tamil Nadu"],"description":"Muthus Gold - Tamil Nadu's leading gold buyers. Instant cash for gold, best gold rates, gold loan settlement since 2020.","url":"https://muthusgold.com","telephone": "+91-6377836377","address":{"@type":"PostalAddress","addressRegion":"Tamil Nadu","addressCountry":"India"},"serviceType":["Gold Buying","Gold Exchange","Gold Loan Settlement"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"150"},"foundingDate":"2020","slogan":"Tamil Nadu's #1 Gold Buyers","knowsAbout":["Gold Buying","Gold Exchange","Gold Loan Settlement","Instant Cash for Gold"],"areaServed":"Tamil Nadu, India"}</script>
+    
+    <!-- Preload Service Worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js');
+        });
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

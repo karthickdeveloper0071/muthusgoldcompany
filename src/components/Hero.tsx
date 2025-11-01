@@ -36,6 +36,8 @@ const Hero = () => {
             fetchPriority="high"
             width="160"
             height="160"
+            decoding="async"
+            style={{ contentVisibility: 'auto' }}
           />
         </motion.div>
         <motion.h1
@@ -56,7 +58,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg sm:text-xl md:text-2xl text-ivory/90 mb-6 max-w-3xl mx-auto"
         >
-          Best gold buyers in Tamil Nadu, India. Get instant cash for gold, settle gold loans, and gold exchange services with guaranteed best market rates.
+          Best gold buyers in Tamil Nadu, India. Get instant cash for gold, settle <a href="#services" className="text-gold hover:text-gold/80 underline transition-colors">gold loans</a>, and <a href="#services" className="text-gold hover:text-gold/80 underline transition-colors">gold exchange services</a> with guaranteed best market rates.
         </motion.p>
         
         <motion.div
@@ -65,7 +67,7 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-base sm:text-lg text-ivory/80 mb-8 max-w-2xl mx-auto"
         >
-          <span className="text-gold font-semibold">Muthus Gold Company</span> - Your trusted partner for gold buying, selling & exchange across India
+          <span className="text-gold font-semibold">Muthus Gold Company</span> - Your trusted partner for <a href="#services" className="text-gold hover:text-gold/80 underline transition-colors">gold buying</a>, <a href="#services" className="text-gold hover:text-gold/80 underline transition-colors">selling & exchange</a> across India. <a href="#about" className="text-gold hover:text-gold/80 underline transition-colors">Learn more about us</a>.
         </motion.div>
 
         <motion.div
