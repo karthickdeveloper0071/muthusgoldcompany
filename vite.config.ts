@@ -4,7 +4,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    // Performance optimizations
     minify: 'terser',
     terserOptions: {
       compress: {
@@ -19,22 +18,23 @@ export default defineConfig({
           motion: ['framer-motion'],
           icons: ['react-icons'],
         },
+        assetFileNames: 'assets/[name].[ext]',
       },
     },
-    // Enable gzip compression
     reportCompressedSize: true,
     chunkSizeWarningLimit: 1000,
+    assetsDir: 'assets',
   },
-  // Optimize dependencies
   optimizeDeps: {
     include: ['react', 'react-dom', 'framer-motion', 'react-icons'],
   },
-  // Server configuration for development
   server: {
     port: 3000,
     open: true,
+    mimeTypes: {
+      'application/javascript': ['js', 'mjs']
+    }
   },
-  // Preview configuration
   preview: {
     port: 4173,
     open: true,
