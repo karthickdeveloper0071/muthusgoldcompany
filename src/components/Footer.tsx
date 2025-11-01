@@ -26,7 +26,7 @@ const Footer = () => {
               <a href="https://www.facebook.com/share/17t2nJTAGa/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
                 <FaFacebook className="text-xl" />
               </a>
-              <a href="https://www.instagram.com/muthusgoldcompany " target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
+              <a href="https://www.instagram.com/muthusgold " target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">
                 <FaInstagram className="text-xl" />
               </a>
               <a href="https://wa.me/916377836377" target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-gold/20 hover:bg-gold rounded-full flex items-center justify-center transition-all">

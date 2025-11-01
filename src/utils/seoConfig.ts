@@ -2,9 +2,9 @@
 export const seoConfig = {
   // Base configuration
   baseUrl: 'https://muthusgold.com',
-  siteName: 'Muthus Gold Company',
-  defaultTitle: 'Muthus Gold Company Tamil Nadu | Best Gold Buyers & Exchange India',
-  defaultDescription: 'Leading gold buyers in Tamil Nadu. Get instant cash for gold, settle gold loans, best gold exchange rates. Trusted since 2020. Call +91-6377836377',
+  siteName: 'Muthus Gold',
+  defaultTitle: 'Muthus Gold | Tamil Nadu\'s #1 Gold Buyers & Exchange Company',
+  defaultDescription: 'Muthus Gold - Tamil Nadu\'s leading gold buyers since 2020. Instant cash for gold, best gold rates, gold loan settlement. 5000+ happy customers. Call +91-6377836377',
   
   // Business information
   business: {
@@ -32,7 +32,7 @@ export const seoConfig = {
 
   // Keywords for different pages
   keywords: {
-    home: 'gold buyers tamil nadu, gold company tamil nadu, sell gold tamil nadu, gold exchange tamil nadu, gold loan settlement, instant cash for gold, muthus gold company, best gold rates tamil nadu',
+    home: 'muthus gold, muthus gold company, muthus gold tamil nadu, gold buyers tamil nadu, gold company tamil nadu, sell gold tamil nadu, gold exchange tamil nadu, gold loan settlement, instant cash for gold, best gold rates tamil nadu',
     about: 'about muthus gold company, gold buyers tamil nadu history, trusted gold company tamil nadu, gold exchange company india, gold loan settlement company',
     services: 'gold services tamil nadu, gold loan clearance tamil nadu, gold buying services, silver buying tamil nadu, loan to cash conversion, 24 hour gold service',
     contact: 'contact muthus gold company, gold buyers tamil nadu contact, call gold company tamil nadu, whatsapp gold buyers, email gold company',
@@ -52,9 +52,11 @@ export const seoConfig = {
     organization: {
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      name: 'Muthus Gold Company',
+      name: 'Muthus Gold',
+      alternateName: ['Muthus Gold Company', 'Muthus Gold Tamil Nadu'],
       url: 'https://muthusgold.com',
-      logo: 'https://muthusgold.com/assets/Logo.png',
+      logo: 'https://muthusgold.com/src/assets/Logo.png',
+      slogan: 'Tamil Nadu\'s #1 Gold Buyers',
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: '+91-6377836377',
@@ -73,8 +75,10 @@ export const seoConfig = {
     localBusiness: {
       '@context': 'https://schema.org',
       '@type': 'LocalBusiness',
-      name: 'Muthus Gold Company',
-      description: 'Leading gold buyers and exchange company in Tamil Nadu, India',
+      name: 'Muthus Gold',
+      alternateName: ['Muthus Gold Company', 'Muthus Gold Tamil Nadu'],
+      description: 'Muthus Gold - Tamil Nadu\'s leading gold buyers and exchange company since 2020',
+      slogan: 'Tamil Nadu\'s #1 Gold Buyers',
       telephone: '+91-6377836377',
       openingHours: 'Mo-Sa 09:00-18:00',
       priceRange: 'Best Market Rates',
@@ -85,7 +89,7 @@ export const seoConfig = {
 
   // AI Assistant optimization
   aiOptimization: {
-    businessSummary: 'Muthus Gold Company is a leading gold trading company in Tamil Nadu, India, established in 2020. We specialize in gold buying, selling, exchange, and loan settlement services. Known for providing best gold rates and instant cash for gold across Tamil Nadu. Contact: +91-6377836377. Website: https://muthusgold.com',
+    businessSummary: 'Muthus Gold is Tamil Nadu\'s leading gold trading company, established in 2020. We specialize in gold buying, selling, exchange, and loan settlement services. Known as Tamil Nadu\'s #1 gold buyers providing best gold rates and instant cash for gold. Contact: +91-6377836377. Website: https://muthusgold.com',
     
     services: [
       'Gold buying with best market rates',
@@ -111,38 +115,38 @@ export const seoConfig = {
 // Page-specific SEO data
 export const pagesSEO = {
   home: {
-    title: 'Muthus Gold Company Tamil Nadu | Best Gold Buyers & Exchange India | Instant Cash for Gold',
-    description: 'Leading gold buyers in Tamil Nadu. Get instant cash for gold, settle gold loans, best gold exchange rates. Trusted gold company serving all over Tamil Nadu since 2020. Call +91-6377836377',
+    title: 'Muthus Gold | Tamil Nadu\'s #1 Gold Buyers | Best Gold Exchange India',
+    description: 'Muthus Gold - Tamil Nadu\'s leading gold buyers since 2020. Get instant cash for gold, settle gold loans, best gold exchange rates. 5000+ happy customers. Call +91-6377836377',
     keywords: seoConfig.keywords.home
   },
   
   about: {
-    title: 'About Muthus Gold Company Tamil Nadu | Trusted Gold Buyers Since 2020 | Best Gold Exchange India',
-    description: 'Learn about Muthus Gold Company - Leading gold buyers in Tamil Nadu since 2020. 5000+ happy customers, best gold rates, transparent gold loan settlement services across Tamil Nadu, India.',
+    title: 'About Muthus Gold | Tamil Nadu\'s Trusted Gold Buyers Since 2020 | Best Gold Exchange',
+    description: 'Learn about Muthus Gold - Tamil Nadu\'s #1 gold buyers since 2020. 5000+ happy customers, best gold rates, transparent gold loan settlement services across Tamil Nadu, India.',
     keywords: seoConfig.keywords.about
   },
   
   services: {
-    title: 'Gold Services Tamil Nadu | Gold Loan Clearance | Gold Buying | Muthus Gold Company India',
-    description: 'Comprehensive gold services in Tamil Nadu: Gold loan clearance, gold & silver buying, loan-to-cash conversion, 24-hour service. Best rates guaranteed. Call +91-6377836377',
+    title: 'Muthus Gold Services Tamil Nadu | Gold Loan Clearance | Gold Buying India',
+    description: 'Muthus Gold comprehensive services in Tamil Nadu: Gold loan clearance, gold & silver buying, loan-to-cash conversion, 24-hour service. Best rates guaranteed. Call +91-6377836377',
     keywords: seoConfig.keywords.services
   },
   
   contact: {
-    title: 'Contact Muthus Gold Company Tamil Nadu | Call +91-6377836377 | Gold Buyers Near Me',
-    description: 'Contact Muthus Gold Company Tamil Nadu for instant cash for gold. Call +91-6377836377, WhatsApp, Email. Best gold buyers serving all over Tamil Nadu, India. Get instant quotes.',
+    title: 'Contact Muthus Gold Tamil Nadu | Call +91-6377836377 | Gold Buyers Near Me',
+    description: 'Contact Muthus Gold Tamil Nadu for instant cash for gold. Call +91-6377836377, WhatsApp, Email. Tamil Nadu\'s #1 gold buyers serving all over Tamil Nadu, India. Get instant quotes.',
     keywords: seoConfig.keywords.contact
   },
   
   gallery: {
-    title: 'Gold Gallery Tamil Nadu | Muthus Gold Company Collection | Premium Gold Jewelry Images',
-    description: 'Explore Muthus Gold Company\'s premium gold jewelry gallery. View our exquisite gold collection images from Tamil Nadu\'s leading gold buyers and dealers.',
+    title: 'Muthus Gold Gallery Tamil Nadu | Premium Gold Collection | Gold Jewelry Images',
+    description: 'Explore Muthus Gold\'s premium gold jewelry gallery. View our exquisite gold collection images from Tamil Nadu\'s #1 gold buyers and dealers.',
     keywords: seoConfig.keywords.gallery
   },
   
   collection: {
-    title: 'Gold Services Collection Tamil Nadu | Muthus Gold Company | Loan Settlement & Gold Buying',
-    description: 'Comprehensive gold services collection: loan settlement, instant cash payment, transparent evaluation, best market rates. Muthus Gold Company serves all Tamil Nadu, India.',
+    title: 'Muthus Gold Services Collection Tamil Nadu | Loan Settlement & Gold Buying',
+    description: 'Muthus Gold comprehensive services collection: loan settlement, instant cash payment, transparent evaluation, best market rates. Serving all Tamil Nadu, India.',
     keywords: seoConfig.keywords.collection
   }
 }

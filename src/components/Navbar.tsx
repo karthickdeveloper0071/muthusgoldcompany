@@ -41,8 +41,15 @@ const Navbar = () => {
               <img 
                 src={logo}
                 alt="Muthus Gold Logo" 
-                className="h-12 md:h-16 w-auto object-contain"
+                className="h-10 md:h-14 w-auto object-contain max-w-[200px]"
+                onError={(e) => {
+                  console.error('Logo failed to load:', e)
+                  e.currentTarget.style.display = 'none'
+                }}
               />
+              <span className="text-gold font-bold text-xl md:text-2xl font-playfair ml-2">
+                Muthus Gold
+              </span>
             </motion.div>
           </Link>
 

@@ -1,0 +1,144 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://muthusgold.com/#organization",
+      "name": "Muthus Gold",
+      "alternateName": [
+        "Muthus Gold Company",
+        "Muthus Gold Tamil Nadu",
+        "Muthus Gold India"
+      ],
+      "url": "https://muthusgold.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://muthusgold.com/src/assets/Logo.png",
+        "width": 300,
+        "height": 300
+      },
+      "slogan": "Tamil Nadu's #1 Gold Buyers",
+      "description": "Muthus Gold is Tamil Nadu's leading gold buying and exchange company since 2020, providing instant cash for gold with best market rates.",
+      "foundingDate": "2020",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-6377836377",
+        "contactType": "customer service",
+        "availableLanguage": ["English", "Tamil"],
+        "areaServed": "Tamil Nadu, India"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "India"
+      },
+      "knowsAbout": [
+        "Gold Buying",
+        "Gold Exchange", 
+        "Gold Loan Settlement",
+        "Instant Cash for Gold",
+        "Gold Jewelry Valuation"
+      ],
+      "serviceType": [
+        "Gold Buying Services",
+        "Gold Exchange Services", 
+        "Gold Loan Settlement",
+        "Precious Metals Trading"
+      ]
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://muthusgold.com/#localbusiness",
+      "name": "Muthus Gold",
+      "alternateName": [
+        "Muthus Gold Company",
+        "Muthus Gold Tamil Nadu"
+      ],
+      "description": "Muthus Gold - Tamil Nadu's leading gold buyers since 2020. Best gold rates, instant cash for gold, transparent gold loan settlement services.",
+      "url": "https://muthusgold.com",
+      "telephone": "+91-6377836377",
+      "email": "muthusgold@gmail.com",
+      "openingHours": "Mo-Sa 09:00-18:00",
+      "priceRange": "Best Market Rates",
+      "paymentAccepted": ["Cash", "Bank Transfer", "UPI"],
+      "currenciesAccepted": "INR",
+      "areaServed": {
+        "@type": "State",
+        "name": "Tamil Nadu",
+        "containedInPlace": {
+          "@type": "Country",
+          "name": "India"
+        }
+      },
+      "serviceType": [
+        "Gold Buying",
+        "Gold Exchange",
+        "Gold Loan Settlement",
+        "Silver Buying",
+        "Jewelry Valuation"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Gold Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gold Buying Service",
+              "description": "Instant cash for gold with best market rates"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gold Loan Settlement",
+              "description": "Complete gold loan clearance and settlement services"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://muthusgold.com/#website",
+      "url": "https://muthusgold.com",
+      "name": "Muthus Gold",
+      "description": "Muthus Gold - Tamil Nadu's #1 gold buyers since 2020. Instant cash for gold, best gold rates, gold loan settlement.",
+      "publisher": {
+        "@id": "https://muthusgold.com/#organization"
+      },
+      "potentialAction": [
+        {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://muthusgold.com/?s={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      ],
+      "inLanguage": "en-IN"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://muthusgold.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://muthusgold.com"
+        }
+      ]
+    }
+  ]
+}

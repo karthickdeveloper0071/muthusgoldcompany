@@ -1,13 +1,14 @@
-# Muthus Gold Company - Leading Gold Buyers in Tamil Nadu, India
-# Website: https://muthusgoldcompany.com
+# Muthus Gold - Tamil Nadu's #1 Gold Buyers Since 2025
+# Website: https://muthusgold.com
 # Contact: +91-6377836377
+# Services: Gold Buying, Gold Exchange, Gold Loan Settlement
 
 # Allow all search engines to crawl the site
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://muthusgoldcompany.com/sitemap.xml
+Sitemap: https://muthusgold.com/sitemap.xml
 
 # Crawl-delay for better server performance
 Crawl-delay: 1
@@ -84,4 +85,4 @@ User-agent: DotBot
 Disallow: /
 
 # Host directive
-Host: https://muthusgoldcompany.com
+Host: https://muthusgold.com
