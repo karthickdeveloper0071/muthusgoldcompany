@@ -33,7 +33,7 @@ const Hero = () => {
             alt="Muthus Gold Company - Best Gold Buyers Tamil Nadu India" 
             className="h-32 md:h-40 w-auto mx-auto drop-shadow-2xl"
             loading="eager"
-            fetchpriority="high"
+           
             width="160"
             height="160"
             decoding="async"
