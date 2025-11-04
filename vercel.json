@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "app": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "rewrites": [
     {
       "source": "/(.*)",
@@ -31,15 +26,6 @@
     },
     {
       "source": "/(.*\\.js)$",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript; charset=utf-8"
-        }
-      ]
-    },
-    {
-      "source": "/(.*\\.mjs)$",
       "headers": [
         {
           "key": "Content-Type",
